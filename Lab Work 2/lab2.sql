@@ -15,12 +15,12 @@ UPDATE employee
 SET 
     wages = 28000
 WHERE
-    code = 'e1';
+    idno = 'e1';
     
 select * from employee;
 
 DELETE FROM employee 
 WHERE
-    code = 'e2';
+    idno = 'e2';
 
 select * from employee;
