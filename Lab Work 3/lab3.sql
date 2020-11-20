@@ -10,6 +10,7 @@ create table employee_details(
 	gender char(1),
 	nationality char(20),
 	gno int,
+	empid int,
 	primary key (gno),
 	foreign key(empid) references employee(empid)
 );
