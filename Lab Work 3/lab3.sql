@@ -6,7 +6,7 @@ create table employee(
 	salary numeric
 );
  
-create table employdetails(
+create table employee_details(
 	gender char(1),
 	nationality char(20),
 	gno int,
@@ -19,14 +19,14 @@ create table employdetails(
 ("e2","William","clerk","20500"),
 ("e3","Mohan","cashier","32000");
 
-insert into employdetails values 
+insert into employee_details values 
 ("M","England","27","e2"),
 ("M","USA","56","e5"),
 ("M","Indian","44","e1");
 
 
 select * from employee where
-empid in (select empid from employdetails);
+empid in (select empid from employee_details);
 
 select * from employee where 
-empid not in(select empid from employdetails);
+empid not in(select empid from employee_details);
