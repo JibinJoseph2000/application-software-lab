@@ -11,7 +11,7 @@ create table employee_details(
 	nationality char(20),
 	gno int,
 	primary key (gno),
-	empid char(5) references employee(empid)
+	foreign key(empid) references employee(empid)
 );
 
  insert into employee values 
