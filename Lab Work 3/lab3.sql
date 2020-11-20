@@ -1,1 +1,32 @@
-eoicr8cgycrt8yh8yv58v34q2
+
+create table employee( 
+	empid CHAR(5) ,
+	name CHAR(15) not null, 
+	designation CHAR(20) not null,
+	salary numeric
+);
+ 
+create table employdetails(
+	gender char(1),
+	nationality char(20),
+	gno int,
+	primary key (gno),
+	empid char(5) references employee(empid)
+);
+
+ insert into employee values 
+("e1","Sunith","manager","45550"),
+("e2","William","clerk","20500"),
+("e3","Mohan","cashier","32000");
+
+insert into employdetails values 
+("M","England","27","e2"),
+("M","USA","56","e5"),
+("M","Indian","44","e1");
+
+
+select * from employee where
+empid in (select empid from employdetails);
+
+select * from employee where 
+empid not in(select empid from employdetails);
