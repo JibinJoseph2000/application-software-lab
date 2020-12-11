@@ -21,14 +21,14 @@ SELECT * FROM Store;
 
 
 
-CREATE VIEW CART AS
+CREATE VIEW ViewCart AS
 SELECT `item`, `quantity` FROM Store;
 
 
 INSERT INTO Store (`code`, `item`, `quantity`, `price`, `discount`, `mrp`) 
 VALUES ("BST", "BISCUITS", 3, 60, 0, 60);
 
-SELECT * FROM CART;
+SELECT * FROM ViewCart;
 
 
-DROP VIEW CART;
+DROP VIEW ViewCart;
