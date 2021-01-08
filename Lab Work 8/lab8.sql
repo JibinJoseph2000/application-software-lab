@@ -12,11 +12,11 @@ INSERT INTO Employee (code, name, DOB, designation, salary)
 VALUES
 ('gm0121','Mohan Kumar','1992-02-05','General Manager',65000),
 ('el7523','Kumar','1998-08-06','Designer',38000),
-('el1434','Kiran','2000-07-25','Clerk',20000.75),
+('el1434','Kiran','2000-07-25','Designer',20000.75),
 ('pm2918','Arjun G','1998-12-15','Product Manager',55000.50);
 
 #3
-SELECT SUM(salary) FROM Employee WHERE designation='Clerk';
+SELECT SUM(salary) FROM Employee WHERE designation='Designer';
 
 #4
 SELECT MAX(salary) FROM Employee;
@@ -29,3 +29,4 @@ SELECT MIN(salary) FROM Employee;
 
 #7
 SELECT COUNT(*) FROM Employee;
+
