@@ -12,9 +12,9 @@ CREATE TABLE store(
 #b
 INSERT INTO store(code,item,quantity,price,discount,mrp)
 VALUES 
-("a123", "Macbook Pro 13", 14, 100999.99, 2000, 120000),
-("a420", "iPhone 12", 12, 90000, 1000, 119900),
-("a123", "Airpods Pro", 10, 30000, 0, 59900);
+("a123", "Dell G3 3500", 1, 78000, 4000, 74000),
+("a420", "Redmi 9i", 1, 9800, 1000, 8800),
+("a123", "Airpods Pro", 1, 30000, 0, 30000);
 
 #c
 SELECT * FROM store; 
