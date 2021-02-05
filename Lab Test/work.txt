@@ -1,0 +1,18 @@
+create table EMPLOYEE( 
+Emp_no CHAR(6) not null,
+ E_name CHAR(10) not null, 
+ E_address CHAR(30) not null,
+ E_ph_no CHAR(30) not null,
+ Dept_no CHAR(6) not null,
+ Dept_name CHAR(10) not null,
+ Job_id CHAR(8) not null,
+ Salary numeric
+ );
+
+
+insert into EMPLOYEE values 
+("e1","Sunith","nagpur","9895255398","10","SALES","1234","32000"),
+("e2","William","Mumbai","9656114932","12","RESEARCH","1212","20500"),
+("e3","James","Chennai","9051237643","20","SALES","1111","32000");
+
+select * from EMPLOYEE
